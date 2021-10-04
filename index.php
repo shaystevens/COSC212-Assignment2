@@ -18,8 +18,8 @@
 <nav>
     <ul>
         <li><a>Home</a></li>
-        <li><a href="map.html">Map</a></li>
-        <li><a href="admin.html">Admin</a></li>
+        <li><a href="map.php">Map</a></li>
+        <li><a href="admin.php">Admin</a></li>
     </ul>
 </nav>
 <div id="bookingData">
@@ -53,8 +53,9 @@
 <div id="reviews">
     <h2>Reviews</h2>
 </div>
-
-
 </section>
+<?php
+include("booking.php");
+?>
 </body>
 </html>

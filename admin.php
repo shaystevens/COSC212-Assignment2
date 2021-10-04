@@ -3,27 +3,30 @@
 <!--Nick Meek 2015-->
 <head>
     <meta charset="utf-8">
-    <title>Muttley and Co.: Map</title>
+    <title>Muttley and Co.: Admin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="leaflet.css">
     <link rel="stylesheet" href="./js/jquery/jquery-ui.min.css">
     <script src="./js/jquery/jquery3.3.js"></script>
-    <script src="./js/leaflet.js"></script>
-    <script src="./js/map.js"></script>
-
+    <script src="./js/Admin.js"></script>
+    <style>
+        th, td{
+            padding: 3px 10px;
+        }
+    </style>
 </head>
+
 <body>
 <h1>Muttley & Co. Car Hire</h1>
 <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a>Map</a></li>
-        <li><a href="admin.html">Admin</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="map.php">Map</a></li>
+        <li><a>Admin</a></li>
     </ul>
 </nav>
+<main>
 
-<div id="map"></div>
-
-</section>
+</main>
 </body>
-</html>
+
