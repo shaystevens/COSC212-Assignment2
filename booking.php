@@ -3,10 +3,15 @@ $jsonFile = file_get_contents('json/bookings.json');
 $json = json_decode($jsonFile);
 $output = "";
 foreach ($json->bookings->booking as $booking){
-    $output.="dogId : " .$booking->dogId. "<br />";
+    $dogs = "";
+    for($i = 0; $i < count($booking->dogId); $i++){
+        $dogs.= $booking->dogId[$i]. " ";
+    }
+    $output.="dogId : " . $dogs . "<br />";
     $output.="Name : " .$booking->name . "<br />";
     $output.="Number of hours : ".$booking->numHours. "<br />";
+    $output.= "<br/>";
 }
-echo "<p>Test</p>";
+echo "</p>";
 echo $output;
 
