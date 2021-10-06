@@ -17,7 +17,7 @@ var MyMap = (function () {
         var walkingTracks = L.layerGroup();
         var parks = L.layerGroup();
 
-        map = L.map("map.php").setView([-45.874129, 170.503622], 15);
+        map = L.map("map").setView([-45.874129, 170.503622], 15);
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             {
