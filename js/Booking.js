@@ -86,7 +86,7 @@ var Booking = (function () {
 
         //make sure there is more than one and less than 4 dogs selected
         var count = 0;
-        $('input[name="dog"]').each(function () {
+        $('input[name="dog[]"]').each(function () {
             if ($(this).prop("checked") === true) {
                 count +=1;
             }

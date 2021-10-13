@@ -22,7 +22,7 @@ var Dogs = (function () {
                 $.each(items, function (key, value) {
                     $("#dogsLst").append("<li id='" + (value.dogId).replace(/\s+/g, '') + "'>" + value.dogId + " : " +
                         value.dogName + " : " +
-                        value.pricePerHour + "<input type='checkbox' name='dog' value='" +
+                        value.pricePerHour + "<input type='checkbox' name='dog[]' value='" +
                         (value.dogId).replace(/\s+/g, '')  + "'> </li>").css({cursor: "pointer"});
                 });
             })
