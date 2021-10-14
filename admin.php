@@ -47,6 +47,7 @@ for($i=0; $i < $count; $i++){
 echo "</select>";
 echo "<input type='submit' value='Cancel'>";
 echo "</form>";
+echo "<script src='js/forceReload.js'></script>";
 ?>
 </body>
 

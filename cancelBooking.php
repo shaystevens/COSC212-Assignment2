@@ -6,8 +6,12 @@ if(!isset($_POST['bookingNumber'])){
 $bookingNumber = $_POST['bookingNumber'] - 1;
 $jsonFile = file_get_contents('json/bookings.json');
 $json = json_decode($jsonFile);
-unset($json->bookings->booking[$bookingNumber]);
-$newJson = json_encode($json);
-file_put_contents('json/bookings.json', $newJson);
+$arr = $json->bookings->booking;
+unset($arr[$bookingNumber]);
+$arr = array_values($arr);
+$newBooking = array("booking" => $arr);
+$bookings = array ("bookings" => $newBooking);
+$editedBookings = json_encode($bookings);
+file_put_contents('json/bookings.json', $editedBookings);
 header('Location: admin.php');
 exit;
