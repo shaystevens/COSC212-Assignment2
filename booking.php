@@ -10,6 +10,12 @@ $time = $_POST['pickupTime'];
 $date = $_POST['arriveDatepicker'];
 $name = $_POST['renterName'];
 
+//Make sure bookings.php can only be accessed when the form is submitted
+if($dogs == "" || $hours == "" || $time == "" || $date == "" || $name == ""){
+    header('Location: index.php');
+    exit;
+}
+
 //Add booking info into array
 $dateArray = explode("/", $date);
 $pickup = array("day" => $dateArray[1], "month" => $dateArray[0], "year" => $dateArray[2], "time"=>$time);

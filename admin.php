@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['admin'])){
+    header('Location: index.php');
+    exit;
+}
+unset($_SESSION['error']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!--Nick Meek 2015-->
@@ -10,7 +18,7 @@
     <script src="./js/jquery/jquery3.3.js"></script>
     <script src="./js/Admin.js"></script>
     <style>
-        th, td{
+        th, td {
             padding: 3px 10px;
         }
     </style>

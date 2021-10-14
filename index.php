@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['admin'])){
+    unset($_SESSION['admin']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!--Nick Meek 2015-->
@@ -19,7 +25,7 @@
     <ul>
         <li><a>Home</a></li>
         <li><a href="map.php">Map</a></li>
-        <li><a href="admin.php">Admin</a></li>
+        <li><a href="adminLogin.php">Admin</a></li>
     </ul>
 </nav>
 <form id="bookingForm" method="POST" action="booking.php">

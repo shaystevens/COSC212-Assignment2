@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['admin'])){
+    unset($_SESSION['admin']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!--Nick Meek 2015-->
@@ -18,7 +24,7 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a>Map</a></li>
-        <li><a href="admin.php">Admin</a></li>
+        <li><a href="adminLogin.php">Admin</a></li>
     </ul>
 </nav>
 
