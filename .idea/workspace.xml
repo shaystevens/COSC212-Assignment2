@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3720a8-d996-4017-92de-d6850a67099a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/forceReload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cancelBooking.php" beforeDir="false" afterPath="$PROJECT_DIR$/cancelBooking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/bookings.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/bookings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="11" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="735">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -282,11 +278,25 @@
       <option name="project" value="LOCAL" />
       <updated>1634177543698</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed canceling bookings so it isn't turned into an object">
+      <created>1634251496840</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634251496840</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed canceling bookings so it isn't turned into an object">
+      <created>1634251544082</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634251544082</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43210000" />
+    <option name="totallyTimeSpent" value="43576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1154" y="23" width="1406" height="1337" extended-state="0" />
@@ -348,7 +358,8 @@
     <MESSAGE value="Edited my bookings.php display" />
     <MESSAGE value="Booking is put into JSON file" />
     <MESSAGE value="Admin page is now password protected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin page is now password protected" />
+    <MESSAGE value="Fixed canceling bookings so it isn't turned into an object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed canceling bookings so it isn't turned into an object" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/leaflet.css">
@@ -484,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="735">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
         </state>
       </provider>
     </entry>
