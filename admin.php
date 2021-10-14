@@ -34,7 +34,19 @@ unset($_SESSION['error']);
     </ul>
 </nav>
 <main>
-
 </main>
+<h3>Cancel Booking:</h3>
+<?php
+include('privateFiles/countBookings.php');
+echo "<form id='cancelBookingForm' action='cancelBooking.php' method='POST'>";
+echo "<select id='bookingNumbers' name='bookingNumber'>";
+for($i=0; $i < $count; $i++){
+    $num = $i + 1;
+    echo "<option value='$num'>$num</option>";
+}
+echo "</select>";
+echo "<input type='submit' value='Cancel'>";
+echo "</form>";
+?>
 </body>
 

@@ -8,6 +8,7 @@
         ],
         "name": "Garner Family",
         "pickup": {
+          "day": "24",
           "month": "8",
           "year": "2021",
           "time": "13:30"
@@ -20,6 +21,7 @@
         ],
         "name": "Mr and Mrs Jones",
         "pickup": {
+          "day": "15",
           "month": "8",
           "year": "2021",
           "time": "10:00"
