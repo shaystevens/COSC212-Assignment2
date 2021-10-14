@@ -3,6 +3,9 @@ session_start();
 if(isset($_SESSION['admin'])){
     unset($_SESSION['admin']);
 }
+if(isset($_SESSION['error'])){
+    unset($_SESSION['error']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
