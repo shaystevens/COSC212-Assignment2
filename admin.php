@@ -42,7 +42,8 @@ if($count > 0){
     echo "<select id='bookingNumbers' name='bookingNumber'>";
     for($i=0; $i < $count; $i++){
         $num = $i + 1;
-        echo "<option value='$num'>$num</option>";
+        $bookingName = $json->bookings->booking[$i]->name;
+        echo "<option value='$num'>$bookingName</option>";
     }
     echo "</select>";
     echo "<input type='submit' value='Cancel'>";
@@ -66,5 +67,39 @@ if($dogCount > 0){
     echo "</form>";
 }
 ?>
+<h3>Add dog:</h3>
+<div id="addDogForm">
+    <form action="addDog.php" method="POST">
+        <label for="dogId">Dog Id:</label><br>
+        <input type="text" id='dogId' name="dogId" value="DW-00">
+        <br><br>
+
+        <label for="dogName">Dog Name:</label><br>
+        <input type="text" id="dogName" name="dogName"><br>
+        <br>
+
+        <label for="dogType">Dog Type:</label><br>
+        <input type="text" id="dogType" name="dogType"><br>
+        <br>
+
+        <label for="dogSize">Dog Size:</label><br>
+        <select id="dogSize" name="dogSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="huge">Huge</option>
+        </select>
+        <br><br>
+
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description"><br>
+        <br>
+
+        <label for="pricePerHour">Price Per Hour:</label><br>
+        <input type="text" id="pricePerHour" name="pricePerHour"><br>
+        <br>
+        <input type="submit" value="Add">
+    </form>
+</div>
 </body>
 
