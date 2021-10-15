@@ -16,17 +16,14 @@ $animalsFile = file_get_contents('json/animals.json');
 $animalsJson = json_decode($animalsFile);
 $dogId = $animalsJson->animals->dogs[$dogEditNum]->dogId;
 
-$editedDog = array("dogId" => $dogId, "dogName" => $dogName, "dogType" => $dogType,
-    "dogSize" => $dogSize, "description" => $description, "pricePerHour" => $price);
+$dog = $animalsJson->animals->dogs[$dogEditNum];
+$dog->dogName = $dogName;
+$dog->dogType = $dogType;
+$dog->dogSize = $dogSize;
+$dog->description = $description;
+$dog->pricePerHour = $price;
 
-$animalsArray = $animalsJson->animals->dogs;
-unset($animalsArray[$dogEditNum]);
-$animalsArray = array_values($animalsArray);
-array_push($animalsArray, $editedDog);
-
-$dogs = array("dogs" => $animalsArray);
-$animals = array("animals" => $dogs);
-$newAnimals = json_encode($animals);
+$newAnimals = json_encode($animalsJson);
 file_put_contents('json/animals.json', $newAnimals);
 header('Location: admin.php');
 exit;
