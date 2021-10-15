@@ -48,6 +48,22 @@ if($count > 0){
     echo "<input type='submit' value='Cancel'>";
     echo "</form>";
     echo "<script src=\"./js/Admin.js\"></script>";
+}else{
+    echo "<p>There are currently no bookings.</p>";
+}
+
+include('privateFiles/dogCount.php');
+if($dogCount > 0){
+    echo "<h3>Remove dog:</h3>";
+    echo "<form id='removeDog' action='removeDog.php' method='POST'>";
+    echo "<select id='dogNumber' name='dogNumber'>";
+    for($i=0; $i < $dogCount; $i++){
+        $name = $animalsJson->animals->dogs[$i]->dogId;
+        echo "<option value='$i'>$name</option>";
+    }
+    echo "</select>";
+    echo "<input type='submit' value='Remove'>";
+    echo "</form>";
 }
 ?>
 </body>
