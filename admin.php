@@ -101,5 +101,48 @@ if($dogCount > 0){
         <input type="submit" value="Add">
     </form>
 </div>
+<?php
+if ($dogCount > 0){
+    echo "<h3>Edit Dogs:</h3>";
+    echo "<div id='dogEditForm'>";
+    echo "<form id='editDog' action='editDog.php' method='POST'>";
+    echo "<select id='dogEditNumber' name='dogEditNumber'>";
+    for($i=0; $i < $dogCount; $i++){
+        $name = $animalsJson->animals->dogs[$i]->dogId;
+        echo "<option value='$i'>$name</option>";
+    }
+    echo "</select>";
+    ?>
+    <br><br>
+    <label for="dogName">Dog Name:</label><br>
+    <input type="text" id="dogName" name="dogName"><br>
+    <br>
+
+    <label for="dogType">Dog Type:</label><br>
+    <input type="text" id="dogType" name="dogType"><br>
+    <br>
+
+    <label for="dogSize">Dog Size:</label><br>
+    <select id="dogSize" name="dogSize">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="huge">Huge</option>
+    </select>
+    <br><br>
+
+    <label for="description">Description:</label><br>
+    <input type="text" id="description" name="description"><br>
+    <br>
+
+    <label for="pricePerHour">Price Per Hour:</label><br>
+    <input type="text" id="pricePerHour" name="pricePerHour"><br>
+    <br>
+    <?php
+    echo "<input type='submit' value='Edit'>";
+    echo "</form>";
+    echo "</div>";
+}
+?>
 </body>
 

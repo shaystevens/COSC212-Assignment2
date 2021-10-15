@@ -7,8 +7,8 @@ $bookingNumber = $_POST['bookingNumber'] - 1;
 $jsonFile = file_get_contents('json/bookings.json');
 $json = json_decode($jsonFile);
 $arr = $json->bookings->booking;
-unset($arr[$bookingNumber]);
-$arr = array_values($arr);
+unset($arr[$bookingNumber]);$arr = array_values($arr);
+
 $newBooking = array("booking" => $arr);
 $bookings = array ("bookings" => $newBooking);
 $editedBookings = json_encode($bookings);
