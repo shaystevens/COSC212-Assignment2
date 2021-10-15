@@ -22,7 +22,7 @@ var Dogs = (function () {
                 $.each(items, function (key, value) {
                     $("#dogsLst").append("<li id='" + (value.dogId).replace(/\s+/g, '') + "'>" + value.dogId + " : " +
                         value.dogName + " : " +
-                        value.pricePerHour + "<input type='checkbox' name='dog' value='" +
+                        value.pricePerHour + "<input type='checkbox' name='dog[]' value='" +
                         (value.dogId).replace(/\s+/g, '')  + "'> </li>").css({cursor: "pointer"});
                 });
             })
@@ -103,3 +103,9 @@ var Dogs = (function () {
 }());
 
 $(document).ready(Dogs.setup);
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="094bc909-9c37-4623-a764-d929cdcb6f79" name="Sapphire" url="http://dev212.otago.ac.nz:8443/~sstevens">
+        <fileTransfer rootFolder="/devel/sstevens/projects/assignment" accessType="SFTP" host="localhost" port="2222" sshConfigId="a80fbc1a-9a40-4cd0-aec2-dd8e0ff8923d" sshConfig="sstevens@localhost:2222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
