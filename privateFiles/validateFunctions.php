@@ -7,8 +7,7 @@
  * @param string $str The string to check.
  * @return True if $str is composed entirely of digits, false otherwise.
  */
-function isDigits($str)
-{
+function isDigits($str){
     $pattern = '/^[0-9]+$/';
     return preg_match($pattern, $str);
 }
@@ -20,8 +19,7 @@ function isDigits($str)
  * @param string $str The string to check.
  * @return True if $str is empty, false otherwise.
  */
-function isEmpty($str)
-{
+function isEmpty($str){
     return strlen(trim($str)) == 0;
 }
 
@@ -33,13 +31,17 @@ function isEmpty($str)
  * @param integer $len The expected length of $str.
  * @result True if $str has length $len, false otherwise.
  */
-function checkLength($str, $len)
-{
+function checkLength($str, $len){
     return strlen(trim($str)) === $len;
 }
 
-function checkDogId($str, &$messages)
-{
+/**
+ * Check to see if the dogId entered is valid.
+ *
+ * @param string $str the string to check.
+ * @param array $messages the array to add error message to.
+ */
+function checkDogId($str, &$messages){
     if (isEmpty($str)) {
         array_push($messages, "Dog Id must not be empty.");
     } elseif (isDigits($str)) {
@@ -49,8 +51,13 @@ function checkDogId($str, &$messages)
     }
 }
 
-function checkDogName($str, &$messages)
-{
+/**
+ * Check to see if dog name is valid.
+ *
+ * @param string $str the string to check.
+ * @param array $messages the array to add error message to
+ */
+function checkDogName($str, &$messages){
     if (isEmpty($str)) {
         array_push($messages, "Dog name must not be empty.");
     } elseif (isDigits($str)) {
@@ -58,8 +65,13 @@ function checkDogName($str, &$messages)
     }
 }
 
-function checkDogType($str, &$messages)
-{
+/**
+ *  Check to see if dog type entered is valid.
+ *
+ * @param string $str the string to check.
+ * @param array $messages the array to add error message to
+ */
+function checkDogType($str, &$messages){
     if (isEmpty($str)) {
         array_push($messages, "Dog type must not be empty.");
     } elseif (isDigits($str)) {
@@ -67,8 +79,13 @@ function checkDogType($str, &$messages)
     }
 }
 
-function checkDogDescription($str, &$messages)
-{
+/**
+ * Check to see if dog description entered is valid.
+ *
+ * @param string $str the string to check.
+ * @param array $messages the array to add error message to
+ */
+function checkDogDescription($str, &$messages){
     if (isEmpty($str)) {
         array_push($messages, "Dog description must not be empty.");
     } elseif (isDigits($str)) {
@@ -76,8 +93,13 @@ function checkDogDescription($str, &$messages)
     }
 }
 
-function checkPricePerHour($str, &$messages)
-{
+/**
+ *  Check to see if price entered is a valid price
+ *
+ * @param string $str the string to check.
+ * @param array $messages the array to add error message to
+ */
+function checkPricePerHour($str, &$messages){
     if (isEmpty($str)) {
         array_push($messages, "Dog price must not be empty.");
     } elseif (!isDigits($str)) {

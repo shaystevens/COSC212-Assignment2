@@ -15,7 +15,7 @@ if (isset($_SESSION['addMessages'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<!--Nick Meek 2015-->
+<!--Shay Stevens 2021-->
 <head>
     <meta charset="utf-8">
     <title>Doge Rentals: Map</title>

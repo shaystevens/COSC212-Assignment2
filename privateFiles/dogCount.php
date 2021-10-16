@@ -1,4 +1,5 @@
 <?php
+/* Counts amount of dogs*/
 $animalsFile = file_get_contents('json/animals.json');
 $animalsJson = json_decode($animalsFile);
 $dogCount = 0;

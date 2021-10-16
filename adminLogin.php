@@ -9,7 +9,7 @@ if (isset($_SESSION['addMessages'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<!--Nick Meek 2015-->
+<!--Shay Stevens 2021-->
 <head>
     <meta charset="utf-8">
     <title>Doge Rentals: login</title>
@@ -44,6 +44,7 @@ if (isset($_SESSION['addMessages'])) {
             </p>
         </form>
         <?php
+        //if form was submitted and there was an error display them
         session_start();
         if (isset($_SESSION['error'])) {
             $error = $_SESSION['error'];

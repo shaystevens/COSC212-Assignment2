@@ -8,7 +8,7 @@ unset($_SESSION['error']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<!--Nick Meek 2015-->
+<!--Shay Stevens 2021-->
 <head>
     <meta charset="utf-8">
     <title>Doge Rentals: Admin</title>
@@ -34,15 +34,19 @@ unset($_SESSION['error']);
         </ul>
     </nav>
 </header>
-<main style="height: 1600px">
+<main style="height: 1800px">
     <?php
     include('privateFiles/countBookings.php');
     ?>
-    <div id="adminTable"><?php
+    <div id="adminTable">
+        <?php
+        //only display bookings when there are bookings
         if ($count > 0) {
             echo "<h3 style='text-align: center; font-size: 40px'>Bookings</h3>";
-        } ?></div>
+        } ?>
+    </div>
     <?php
+    //Only display cancel booking if there are bookings
     if ($count > 0) {
         echo "<h3 id='adminHeader'>Cancel Booking:</h3>";
         echo "<div class='centerForm'>";
@@ -63,6 +67,7 @@ unset($_SESSION['error']);
     }
 
     include('privateFiles/dogCount.php');
+    //only display remove dogs if there are dogs
     if ($dogCount > 0) {
         echo "<h3 id='removeHeader'>Remove dog:</h3>";
         echo "<div class='centerForm'>";
@@ -78,6 +83,7 @@ unset($_SESSION['error']);
         echo "</div>";
     }
     ?>
+    <!--Always display add dog form-->
     <h3 id="addDogHeader">Add dog:</h3>
     <div id="addDogForm">
         <div class='addEditForm'>
@@ -117,12 +123,15 @@ unset($_SESSION['error']);
         </div>
     </div>
     <?php
+    //If form was submitted and had errors display them.
     if (isset($_SESSION['addMessages'])) {
         $addErrorMessages = $_SESSION['addMessages'];
         for ($i = 0; $i < count($addErrorMessages); $i++) {
             echo "<p style='color: red; text-align: center;'>$addErrorMessages[$i]</p>";
         }
     }
+
+    //only display edit dogs form if there are dogs
     if ($dogCount > 0) {
         ?>
         <h3 id='editDogHeader'>Edit Dogs:</h3>
@@ -169,6 +178,7 @@ unset($_SESSION['error']);
             </div>
         </div>
         <?php
+        //if the form was submitted and there was an error display the error
         if (isset($_SESSION['editMessages'])) {
             $editErrorMessages = $_SESSION['editMessages'];
             for ($i = 0; $i < count($editErrorMessages); $i++) {

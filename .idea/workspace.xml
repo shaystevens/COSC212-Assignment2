@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c3720a8-d996-4017-92de-d6850a67099a" name="Default Changelist" comment="Have added error checking to add and edit dogs">
+    <list default="true" id="9c3720a8-d996-4017-92de-d6850a67099a" name="Default Changelist" comment="Changed CSS to make it more appealing and removed show hide ability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addDog.php" beforeDir="false" afterPath="$PROJECT_DIR$/addDog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminLogin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminLoginValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminLoginValidation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/booking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cancelBooking.php" beforeDir="false" afterPath="$PROJECT_DIR$/cancelBooking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editDog.php" beforeDir="false" afterPath="$PROJECT_DIR$/editDog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/AdminLoad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/forceReload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/map.php" beforeDir="false" afterPath="$PROJECT_DIR$/map.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privateFiles/countBookings.php" beforeDir="false" afterPath="$PROJECT_DIR$/privateFiles/countBookings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privateFiles/dogCount.php" beforeDir="false" afterPath="$PROJECT_DIR$/privateFiles/dogCount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privateFiles/sqlConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/privateFiles/sqlConnection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/privateFiles/validateFunctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/privateFiles/validateFunctions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/removeDog.php" beforeDir="false" afterPath="$PROJECT_DIR$/removeDog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,7 @@
       <workItem from="1634345620644" duration="724000" />
       <workItem from="1634346547128" duration="281000" />
       <workItem from="1634346981695" duration="5047000" />
-      <workItem from="1634354264900" duration="5482000" />
+      <workItem from="1634354264900" duration="10709000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment 2 working from home">
       <created>1634337113233</created>
@@ -136,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634344929738</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed CSS to make it more appealing and removed show hide ability">
+      <created>1634361797758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634361797758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -188,7 +193,8 @@
     <MESSAGE value="Assignment 2 working from home" />
     <MESSAGE value="Assignment 2 re-pushing all files to main due to error" />
     <MESSAGE value="Have added error checking to add and edit dogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have added error checking to add and edit dogs" />
+    <MESSAGE value="Changed CSS to make it more appealing and removed show hide ability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed CSS to make it more appealing and removed show hide ability" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
