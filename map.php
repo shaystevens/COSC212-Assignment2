@@ -6,6 +6,12 @@ if(isset($_SESSION['admin'])){
 if(isset($_SESSION['error'])){
     unset($_SESSION['error']);
 }
+if(isset($_SESSION['editMessages'])){
+    unset($_SESSION['editMessages']);
+}
+if(isset($_SESSION['addMessages'])){
+    unset($_SESSION['addMessages']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

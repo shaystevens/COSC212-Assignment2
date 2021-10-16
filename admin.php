@@ -82,7 +82,7 @@ if ($dogCount === 0) {
 ?>>
     <form action="addDog.php" method="POST">
         <label for="dogId">Dog Id:</label><br>
-        <input type="text" id='dogId' name="dogId" value="DW-00">
+        <input type="text" id='dogId' name="dogId" value="DW-00" maxlength="6">
         <br><br>
 
         <label for="dogName">Dog Name:</label><br>
@@ -113,6 +113,12 @@ if ($dogCount === 0) {
     </form>
 </div>
 <?php
+if(isset($_SESSION['addMessages'])){
+    $addErrorMessages = $_SESSION['addMessages'];
+    for($i=0; $i < count($addErrorMessages); $i++){
+        echo "<p>$addErrorMessages[$i]</p>";
+    }
+}
 if ($dogCount > 0) {
     ?>
     <h3 id='editDogHeader'>Edit Dogs:</h3>
@@ -155,6 +161,12 @@ if ($dogCount > 0) {
         </form>
     </div>
     <?php
+    if(isset($_SESSION['editMessages'])){
+        $editErrorMessages = $_SESSION['editMessages'];
+        for($i=0; $i < count($editErrorMessages); $i++){
+            echo "<p>$editErrorMessages[$i]</p>";
+        }
+    }
 }
 ?>
 </body>

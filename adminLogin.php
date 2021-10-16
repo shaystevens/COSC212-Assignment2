@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION['editMessages'])){
+    unset($_SESSION['editMessages']);
+}
+if(isset($_SESSION['addMessages'])){
+    unset($_SESSION['addMessages']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!--Nick Meek 2015-->
