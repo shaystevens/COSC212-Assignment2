@@ -140,7 +140,6 @@ var Booking = (function () {
 
         //Do final check and write to localStorage
         if (validateBookingInformation()) {
-            window.localStorage.setItem('dogBookings', JSON.stringify(newBooking));
             alert("Your booking was successful!");
             return true; //so the form will submit
         } else {
