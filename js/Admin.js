@@ -23,7 +23,7 @@ var Admin = (function () {
                     "</td><td>" + v.pickup.time + "</td>" + "</td><td>" + v.numHours + "</td>";
             });
             s += "</table>";
-            $("main").append(s);
+            $("#adminTable").append(s);
         });
     };
 

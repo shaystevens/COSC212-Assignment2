@@ -1,10 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION['admin'])){
+if (!isset($_SESSION['admin'])) {
     header('Location: index.php');
     exit;
 }
-if(isset($_SESSION['editMessages'])){
+if (isset($_SESSION['editMessages'])) {
     unset($_SESSION['editMessages']);
 }
 include('privateFiles/validateFunctions.php');
@@ -19,7 +19,7 @@ checkDogName($dogName, $editMessages);
 checkDogType($dogType, $editMessages);
 checkDogDescription($description, $editMessages);
 checkPricePerHour($price, $editMessages);
-if(count($editMessages) > 0){
+if (count($editMessages) > 0) {
     $_SESSION['editMessages'] = $editMessages;
     header('Location: admin.php');
     exit;

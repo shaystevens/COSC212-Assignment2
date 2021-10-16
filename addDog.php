@@ -1,10 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION['admin'])){
+if (!isset($_SESSION['admin'])) {
     header('Location: index.php');
     exit;
 }
-if(isset($_SESSION['addMessages'])){
+if (isset($_SESSION['addMessages'])) {
     unset($_SESSION['addMessages']);
 }
 include('privateFiles/validateFunctions.php');
@@ -21,7 +21,7 @@ checkDogName($dogName, $addMessages);
 checkDogType($dogType, $addMessages);
 checkDogDescription($description, $addMessages);
 checkPricePerHour($price, $addMessages);
-if(count($addMessages) > 0){
+if (count($addMessages) > 0) {
     $_SESSION['addMessages'] = $addMessages;
     header('Location: admin.php');
     exit;
@@ -31,7 +31,7 @@ $animalsFile = file_get_contents('json/animals.json');
 $animalsJson = json_decode($animalsFile);
 
 $newDog = array("dogId" => $dogId, "dogName" => $dogName, "dogType" => $dogType,
-"dogSize" => $dogSize, "description" => $description, "pricePerHour" => $price);
+    "dogSize" => $dogSize, "description" => $description, "pricePerHour" => $price);
 
 $animalsArray = $animalsJson->animals->dogs;
 array_push($animalsArray, $newDog);
